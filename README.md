@@ -3,7 +3,7 @@
 **attack_exporter** is a lightweight utility that downloads the latest [MITRE ATT&CK® Enterprise](https://attack.mitre.org/) dataset, removes any revoked or deprecated items, and exports a concise CSV:
 
 ```csv
-id,name,platforms,description,language
+id,name,platforms,description
 ````
 
 There’s no heavy packaging or complex setup—just one dependency (`requests`) and a few Python files.
@@ -25,15 +25,16 @@ cd attack_exporter
 1. **Fetch or refresh** the ATT\&CK bundle:
 
    ```bash
-   python<your python version> cli.py update
+   python3 cli.py update
    ```
 
 2. **Export** the CSV (default file name: `enterprise.csv`):
 
    ```bash
-   python cli.py export csv --out enterprise
+   python3 cli.py export csv --out enterprise
    ```
-   ``bash
+
+   ```bash
      python3 cli.py export csv_full  --out enterprise-full
    ```
 

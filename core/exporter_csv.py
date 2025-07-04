@@ -5,8 +5,8 @@ core/exporter_csv.py
 
 Two CSV exporters that implement the « Exporter » interface:
 
-* GenericCSVExporter       – truncated *description* field (180 chars)
-* GenericCSVExporterFull   – full *description* field
+* GenericCSVExporter        truncated *description* field (180 chars)
+* GenericCSVExporterFull    full *description* field
 
 Both work on any operating system; the path is resolved by the caller.
 """
@@ -43,7 +43,7 @@ class _BaseCSVExporter(Exporter):
             writer.writeheader()
             writer.writerows(processed)
 
-        print(f"[✓] CSV written : {out_path} ({len(processed)} rows)")
+        print(f"[OK] CSV written : {out_path} ({len(processed)} rows)")
 
     # ------------------------------------------------------------------ #
     # internal helpers                                                   #
