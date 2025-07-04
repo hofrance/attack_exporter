@@ -4,7 +4,6 @@
 
 ```csv
 id,name,platforms,description,language
-...
 ````
 
 There’s no heavy packaging or complex setup—just one dependency (`requests`) and a few Python files.
@@ -63,7 +62,7 @@ export ATTACK_EXPORTER_CACHE="/var/tmp/attack_exporter"
 python cli.py update
 ```
 
----
+
 
 ## Extending
 
@@ -72,7 +71,7 @@ python cli.py update
 * **Support a new OS:**
   Add `platforms/<os>/__init__.py` that registers the generic classes (or custom ones).
 
----
+
 
 ## License
 
