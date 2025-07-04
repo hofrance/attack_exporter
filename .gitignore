@@ -1,0 +1,10 @@
+# artefacts générés
+*.pyc
+__pycache__/
+cache/
+*.csv
+
+# fichiers d'éditeur / IDE
+.vscode/
+.idea/
+*.swp
