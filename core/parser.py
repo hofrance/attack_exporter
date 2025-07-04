@@ -23,9 +23,7 @@ class GenericParser(Parser):
                 "id": mitre_id,
                 "name": obj.get("name", ""),
                 "platforms": ", ".join(obj.get("x_mitre_platforms", [])),
-                "desc": textwrap.shorten(
-                    obj.get("description", "").replace("\n", " "), 180, placeholder="…"
-                )
+               "desc": obj.get("description", "").replace("\n", " ")
             })
 
         return rows
