@@ -1,4 +1,3 @@
-````markdown
 # attack_exporter
 
 **attack_exporter** is a lightweight utility that downloads the latest [MITRE ATT&CK® Enterprise](https://attack.mitre.org/) dataset, removes any revoked or deprecated items, and exports a concise CSV:
@@ -80,5 +79,3 @@ python cli.py update
 * **Code:** MIT
 * **ATT\&CK content:** © MITRE Corporation, CC BY 4.0
 
-```
-```
