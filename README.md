@@ -8,7 +8,7 @@ id,name,platforms,description,language
 
 There’s no heavy packaging or complex setup—just one dependency (`requests`) and a few Python files.
 
----
+
 
 ## Installation
 
@@ -18,14 +18,14 @@ git clone https://github.com/hofrance/attack_exporter.git
 cd attack_exporter
 ```
 
----
+
 
 ## Basic usage
 
 1. **Fetch or refresh** the ATT\&CK bundle:
 
    ```bash
-   python cli.py update
+   python<your python version> cli.py update
    ```
 
 2. **Export** the CSV (default file name: `enterprise.csv`):
@@ -33,8 +33,11 @@ cd attack_exporter
    ```bash
    python cli.py export csv --out enterprise
    ```
+   ``bash
+     python3 cli.py export csv_full  --out enterprise-full
+   ```
 
----
+
 
 ## Project layout
 
